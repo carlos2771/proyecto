@@ -1,0 +1,94 @@
+.calendario{
+    font-size: 25px;
+    background:white url(descarga.png);
+    background-size: 60px;
+    background-repeat: no-repeat;
+    background-position: 98%;
+    padding: 5px;
+    font-weight: 999;
+    border: none;
+    outline: none;
+}
+
+.calendar:focus{
+    border: 5px solid black;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator{
+    opacity: 0;
+}
+
+.hora{
+    font-size: 25px;
+    background:white url(reloj.png);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 98%;
+    padding: 5px;
+    font-weight: 999;
+    border: none;
+    outline: none;
+}
+
+input[type="time"]::-webkit-calendar-picker-indicator {
+    background: none;
+  }
+
+.tabla{
+    width: 20%;
+}
+
+table {
+    background-color: white;
+    text-align: center;
+    width: 100%;
+    height: 700px;
+    
+}
+
+thead {
+    background-color:  var(--secondary);
+    color: white;
+    top: 0;
+    width: 100%;
+}
+
+tbody {
+    width: 100%;
+}
+
+tr:nth-child(even) {
+    background-color: #9CECFB;
+}
+
+
+td {
+    font-size: 0.9rem;
+    padding: 20px; 
+}
+
+th {
+    font-size: 1rem;
+    padding: 20px;
+    width: 100%;
+} 
+h3 {
+    text-align: center;
+}
+.tabla2{
+    width: 10px;
+}
+
+
+
+
+
+
+.content{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.caja{
+    margin-bottom: 300px;
+}

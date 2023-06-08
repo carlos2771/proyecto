@@ -1,0 +1,93 @@
+
+/*Tablas*/
+
+.tablas{
+    width: 70%;
+}
+
+table {
+    background-color: white;
+    text-align: left;
+    width: 100%;
+    display: inline-block;
+    height: 700px;
+    overflow-y: scroll;
+}
+
+thead {
+    background-color:  var(--secondary);
+    color: white;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+tbody {
+    width: 100%;
+}
+
+tr:nth-child(even) {
+    background-color: #9CECFB;
+}
+
+tr:hover td {
+    background-color: rgba(30, 91, 183, 0.86) ;
+}
+
+td {
+    font-size: 1rem;
+    padding: 20px; 
+}
+
+th {
+    font-size: 1.3rem;
+    padding: 20px;
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+}
+
+.consultas {
+    display: flex;
+    justify-content: space-between;
+}
+
+.buscador input {
+    border-radius: 10px ;
+    height: 38px;
+    margin-bottom: 15px;
+    width: 200px;
+}
+
+.buscador i {
+    margin-right:  10px;
+    font-size: 25px;
+}
+
+button {
+    margin-bottom: 100px;
+}
+
+.scroll {
+    background-color: aliceblue;
+    width: 100%;
+    overflow: scroll;
+    height: 600px;
+}
+
+@media screen and (max-width: 1024px)  {
+    .tablas {
+        width: 55%;
+    }
+
+    table {
+        height: 570px;
+    }
+
+    
+}
+
+
+/*Fin tablas*/

@@ -1,0 +1,10 @@
+.catalogo{
+    width: 100%;
+}
+.caja{
+    width: 60px;
+    height: 60px;
+    border: 1px solid black;
+    text-align: center;
+    line-height: 60px
+}

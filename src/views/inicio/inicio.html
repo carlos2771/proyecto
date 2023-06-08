@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PS BARBER-ONLINE</title>
+  <link rel="stylesheet" href="/src/styles/style.css">
+  <link rel="stylesheet" href="/src/styles/tablas.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+    integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+
+  <script src="https://kit.fontawesome.com/81785ab5f9.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="header">
+    <div class="titleContainer">
+      <h3 class="title">PS-Barber-Online</h3>
+    </div>
+    <div class="icon">
+      <i class="fa-solid fa-user logo"></i>
+    </div>
+  </div>
+  <div class="containerMain">
+    <nav class="container-navbar">
+      <ul>
+        <li><i class="fa-solid fa-house"></i><a href="/src/views/inicio/inicio.html"> Inicio</a></li>
+        <li><i class="fa-solid fa-user"></i><a href="/src/views/roles/roles.html"> Roles</a></li>
+        <li><i class="fa-solid fa-users"></i><a href="/src/views/usuarios/usuarios.html"> Usuarios</a></li>
+        <li><i class="fa-sharp fa-solid fa-truck"></i><a href="/src/views/proveedores/proveedores.html"> Proveedores</a>
+        </li>
+        <li><i class="fa-solid fa-calendar-days"></i><a href="/src/views/agenda/agenda.html"> Agenda</a></li>
+        <li><i class="fa-sharp fa-solid fa-wine-bottle"></i><a href="/src/views/productos/productos.html"> Productos</a>
+        </li>
+        <li><i class="fa-sharp fa-solid fa-cart-shopping"></i><a href="/src/views/compras/compras.html"> Compras</a>
+        </li>
+        <li><i class="fa-solid fa-book"></i><a href="/src/views/catalogo/catalogo.html"> Catalogo</a></li>
+        <li><i class="fa-solid fa-dollar-sign"></i></i><a href="/src/views/ventas/ventas.html"> Ventas</a></li>
+        <li><i class="fa-sharp fa-solid fa-user-plus"></i><a href="/src/views/clientes/clientes.html"> Clientes</a></li>
+        <li><i class="fa-solid fa-chart-line"></i><a href="/src/views/dashboard/dashboard.html"> Dashboard</a></li>
+      </ul>
+    </nav>
+    <div class="content">
+
+
+
+
+
+
+
+
+      <!-- Tabla-->
+      <div class="tablas">
+        <h3>Usuarios</h3>
+        <div class="consultas">
+          <!-- Button trigger modal -->
+          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            Agregar Usuarios
+          </button>
+
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div>
+                    <form class="formClass formWidth" id="formR">
+                      <h3>Agregar Usuarios</h3>
+                      <div class="mb-3 ">
+                        <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                        <input type="text" class=" form-control" id="nombre" placeholder="Example">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class=" form-label">Documento</label>
+                        <input type="number" class="form-control" id="documento" placeholder="0000000000">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class=" form-label">Telefono</label>
+                        <input type="text" class="form-control" id="telefono" placeholder="0000000000">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputEmail1" class=" form-label">Email</label>
+                        <input type="text" class="form-control" id="email" placeholder="example@mail.com">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class=" form-label">Contraseña</label>
+                        <input type="password" class="form-control" id="contraseña1">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputPassword1" class=" form-label">Comfirmar contraseña</label>
+                        <input type="password" class="form-control" id="contraseña2">
+                      </div>
+
+                    </form>
+                  </div>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button type="button" class="btn btn-primary" id="registrar">Guardar</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="buscador" ><i class="fa-solid fa-magnifying-glass"></i><input type="text" id="buscador"></div>
+        </div>
+        <table id="tablaT">
+          <thead>
+            <th style="width: 20%" >Nombre</th>
+            <th style="width: 20%">Documento</th>
+            <th style="width: 14%">Telefono</th>
+            <th style="width: 20%">Correo</th>
+            <th style="width: 5%">Estado</th>
+            <th style="width: 5%">Acciones</th>
+          </thead>
+          <tbody id="table" class="table">
+
+          </tbody>
+
+        </table>
+      </div>
+
+      
+      
+      <!-- Modal -->
+      <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="mi_Modal">Modal title</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div>
+                <form class="formClass formWidth" id="formR">
+                  <h3>Editar Usuarios</h3>
+                  <div class="mb-3 ">
+                    <label for="exampleInputEmail1" class="form-label">Nombre</label>
+                    <input type="text" class="form-control" id="nombreEdit" placeholder="Example">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Documento</label>
+                    <input type="number" class="form-control" id="documentoEdit" placeholder="0000000000" disabled>
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Telefono</label>
+                    <input type="text" class="form-control" id="telefonoEdit" placeholder="0000000000">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="emailEdit" placeholder="example@mail.com">
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" id="editUser">Save changes</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./index.js"></script>
+  <script src="./J"></script>
+</body>
+
+</html>

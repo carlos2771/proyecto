@@ -1,0 +1,14 @@
+.formWidth{
+    width: 25%;
+}
+.inputs{
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+.botones{
+    margin-top: 20px;
+}
+form h3{
+    margin-bottom: 40px;
+}

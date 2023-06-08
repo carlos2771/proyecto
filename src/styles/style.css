@@ -1,0 +1,173 @@
+:root {
+    --primary: rgb(7, 43, 98);
+    --secondary: rgba(30, 91, 183, 1)
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,h2,h3,h4,h5,h6{
+    color: aliceblue;
+}
+
+body {
+    height: 100vh;
+    background: #2980B9;
+    background: -webkit-linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    background: linear-gradient(to right, #FFFFFF, #6DD5FA, #2980B9);
+    
+}
+.header {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 10%;
+}
+
+.containerMain {
+    display: flex;
+    width: 100%;
+    height: 90%;
+}
+.content {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    background: rgb(120, 156, 209);
+    width: 88%;
+}
+.formClass {
+    background: var(--secondary);
+    padding: 3rem;
+    border: 1px solid black;
+    border-radius: 20px;
+    /* width: 35%; */
+}
+
+
+.titleContainer {
+    background: var(--secondary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12%;
+    height: 100%;
+}
+
+.title {
+    font-size: 2rem;
+    color: white
+}
+
+/*Colores*/
+
+.container-navbar {
+    width: 12%;
+    height: 100%;
+}
+.container-navbar ul {
+    background-color: var(--primary);
+    list-style: none;
+    padding: 0;
+    height: 100%;
+}
+
+.container-navbar i {
+    color: white;
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    width: 10%;
+}
+
+
+/*Tamaño*/
+.container-navbar a {
+    text-decoration: none;
+    color: aliceblue;
+    font-size: 1.3rem;
+}
+
+.titulo h3 {
+    font-size: 40px;
+    padding: 10px;
+    width: 400px;
+}
+
+.container-navbar li {
+    align-items: center;
+    display: flex;
+    gap: 10px; 
+    padding: 1rem 1rem;
+}
+
+.container-navbar li:hover{
+    background: var(--secondary);
+}
+
+.container-navbar li:hover a{
+    color: aliceblue;
+    width: 100%;
+}
+
+.icon {
+    border: 1px solid black;
+    padding: 0.5rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+
+.icon i {
+    font-size: 2rem;
+}
+.botones{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+
+}
+.caja select{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px ;
+    
+}
+
+label {
+    color: white;
+}
+
+@media screen and (max-width:1700px){
+    .container-navbar {
+        width: 15%;
+        
+    }
+
+    .titleContainer {
+        width: 15%;
+    }
+
+    .content {
+        width: 85%;
+    }
+
+    .title {
+        font-size: 1.5rem;
+        
+    }
+    
+    .container-navbar i {
+        font-size: 1rem;
+    }
+    
+    
+    .container-navbar a {
+        font-size: 1rem;
+    }
+}
+.filtro{
+    display: none;
+}
