@@ -137,8 +137,9 @@ function editar(){
     console.log(editado);
 
     localStorage.setItem(LOCALSTORAGEITEM, JSON.stringify(editado))
+    document.getElementById("formR_Edit").reset();
     tablaUsuarios()
-
+    editModal.hide()
 }
 editUser.addEventListener("click", editar)
 
